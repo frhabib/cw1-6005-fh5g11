@@ -1,18 +1,18 @@
 #!/usr/bin/make -f
-# Sample debian/rules that uses debhelper. 
-# This file is public domain software, originally written by Joey Hess.
-#
-# This version is for packages that are architecture independent.
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
+
+script = $(CURDIR)/index.php
+rss = $(CURDIR)/rss_php.php
+feeds = $(CURDIR)/feeds.conf
+
+DEST1 = $(CURDIR)/debian/cw1-6005-fh5g11/usr/share/cw1-6005-fh5g11
+DEST2 = $(CURDIR)/debian/cw1-6005-fh5g11/usr/share/applications
 
 build: build-stamp
 build-stamp:
 	dh_testdir
 
-	# Add here commands to compile the package.
-	#$(MAKE)
+	
 
 	touch build-stamp
 
@@ -21,56 +21,44 @@ clean:
 	dh_testroot
 	rm -f build-stamp
 
-	# Add here commands to clean up after the build process.
-	#$(MAKE) clean
-	#$(MAKE) distclean
+	
 
 	dh_clean
 
-install: build
+install: build clean  $(script) $(rss) $(feeds)
 	dh_testdir
 	dh_testroot
 	dh_prep
 	dh_installdirs
 
-	# Add here commands to install the package into debian/<packagename>.
-	#$(MAKE) prefix=`pwd`/debian/`dh_listpackages`/usr install
+	mkdir -m 755 -p $(DEST1)
+	mkdir -m 755 -p $(DEST2)
 
-# Build architecture-independent files here.
+	install -m 777 $(script) $(DEST1)
+	install -m 666 $(rss) $(DEST1)
+	install -m 666 $(feeds) $(DEST1)
+	
+	
+
 binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
 	dh_installdocs
 	dh_installexamples
-#	dh_installmenu
-#	dh_installdebconf
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installcatalogs
-#	dh_installpam
-#	dh_installmime
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
-#	dh_installwm
-#	dh_installudev
-#	dh_lintian
-#	dh_bugfiles
-#	dh_undocumented
 	dh_installman
 	dh_link
 	dh_compress
 	dh_fixperms
-#	dh_perl
+
 	dh_installdeb
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
 
-# Build architecture-dependent files here.
+
 binary-arch: build install
-# We have nothing to do by default.
+
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install

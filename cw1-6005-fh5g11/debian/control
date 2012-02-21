@@ -1,15 +1,14 @@
-Source: package
-Section: unknown
+Source: cw1-6005-fh5g11
+Section: net
 Priority: extra
-Maintainer: fh5g11 <fh5g11@ecs.soton.ac.uk>
+Maintainer: Fatma Habib <fh5g11@ecs.soton.ac.uk>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.8.4
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/package.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/package.git;a=summary
+Homepage: https://github.com/frhabib/cw1-6005-fh5g11
 
-Package: package
+
+Package: cw1-6005-fh5g11
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${php:Depends}, php-cli
+Description: Simple PHP RSS reader
+ This applications displays an RSS feed after reeding it from a config file
