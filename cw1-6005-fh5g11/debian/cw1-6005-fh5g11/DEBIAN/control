@@ -2,9 +2,9 @@ Package: cw1-6005-fh5g11
 Version: 1.0.0
 Architecture: all
 Maintainer: Fatma Habib <fh5g11@ecs.soton.ac.uk>
-Installed-Size: 6144
-Depends: php-cli
-Section: unknown
+Installed-Size: 7168
+Depends: php5-cli
+Section: net
 Priority: extra
 Homepage: https://github.com/frhabib/cw1-6005-fh5g11
 Description: Simple PHP RSS reader

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 21 Feb 2012 13:50:07 +0000
+Source: cw1-6005-fh5g11
+Binary: cw1-6005-fh5g11
+Architecture: source all
+Version: 1.0.0
+Distribution: unstable
+Urgency: low
+Maintainer: Fatma Habib <fh5g11@ecs.soton.ac.uk>
+Changed-By: fh5g11 <fh5g11@ecs.soton.ac.uk>
+Description: 
+ cw1-6005-fh5g11 - Simple PHP RSS reader
+Changes: 
+ cw1-6005-fh5g11 (1.0.0) unstable; urgency=low
+ .
+   * Initial Release.
+Checksums-Sha1: 
+ 7a81ce9447917bc4be24894822101b4018cc72b2 555 cw1-6005-fh5g11_1.0.0.dsc
+ a2e09bafb01a31e444d2a7b444e32f5db9ae6ce2 5517 cw1-6005-fh5g11_1.0.0.tar.gz
+ d7d8ddf481238d9ef9d70f0b534676b06fe720dc 5644 cw1-6005-fh5g11_1.0.0_all.deb
+Checksums-Sha256: 
+ 6effeb4ff28544ad775c0d1ebaed04975c432782ead3e8052b193e46b60eb11b 555 cw1-6005-fh5g11_1.0.0.dsc
+ 5a20053d1558ef49acc871139d8985c724220ce188cd0ff85cd9bf4e8e233aca 5517 cw1-6005-fh5g11_1.0.0.tar.gz
+ abc7f9717a8bd421d416b91294ec2372de7f34b95c6363de853db4f2ff04ead5 5644 cw1-6005-fh5g11_1.0.0_all.deb
+Files: 
+ cc8edb75ec8309e53b4b458daae51ed0 555 net extra cw1-6005-fh5g11_1.0.0.dsc
+ 86c28d08636b9aa8705014bb96f1d098 5517 net extra cw1-6005-fh5g11_1.0.0.tar.gz
+ ed792717e942de6dd9447e4db04b81fd 5644 net extra cw1-6005-fh5g11_1.0.0_all.deb
