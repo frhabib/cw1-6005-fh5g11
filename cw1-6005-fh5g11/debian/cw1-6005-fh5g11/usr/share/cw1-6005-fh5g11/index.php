@@ -118,6 +118,7 @@
 	}
 
 	function print_help() {
+		echo "\nType get_feeds in Terminal to get the latest BBC feeds\n\n";
 		echo "usage: command [options]\n";
 		echo "\n";
 		echo "Options\n";

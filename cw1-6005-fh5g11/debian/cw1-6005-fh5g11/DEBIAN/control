@@ -8,4 +8,4 @@ Section: net
 Priority: extra
 Homepage: https://github.com/frhabib/cw1-6005-fh5g11
 Description: Simple PHP RSS reader
- This applications displays an RSS feed after reeding it from a config file
+ This application displays BBC RSS feeds using the command get_feeds

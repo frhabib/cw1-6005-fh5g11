@@ -1,28 +1,35 @@
 Format: 1.8
-Date: Tue, 21 Feb 2012 13:50:07 +0000
+Date: Thu, 23 Feb 2012 11:34:16 +0000
 Source: cw1-6005-fh5g11
 Binary: cw1-6005-fh5g11
 Architecture: source all
 Version: 1.0.0
-Distribution: unstable
-Urgency: low
+Distribution: stable
+Urgency: high
 Maintainer: Fatma Habib <fh5g11@ecs.soton.ac.uk>
-Changed-By: fh5g11 <fh5g11@ecs.soton.ac.uk>
+Changed-By: Fatma <fh5g11@ecs.soton.ac.uk>
 Description: 
  cw1-6005-fh5g11 - Simple PHP RSS reader
 Changes: 
- cw1-6005-fh5g11 (1.0.0) unstable; urgency=low
+ cw1-6005-fh5g11 (1.0.0) stable; urgency=high
  .
-   * Initial Release.
+   [Fatma <fh5g11@ecs.soton.ac.uk>]
+   * first commit of 2012 reference code
+   * Initial Debian package
+   * Used sample rules file by Joey Hess
+   * edited rules, control and copyrigth
+   * resolving conflicts due to previous package name
+   * After packaging
+   * with shell
 Checksums-Sha1: 
- 7a81ce9447917bc4be24894822101b4018cc72b2 555 cw1-6005-fh5g11_1.0.0.dsc
- a2e09bafb01a31e444d2a7b444e32f5db9ae6ce2 5517 cw1-6005-fh5g11_1.0.0.tar.gz
- d7d8ddf481238d9ef9d70f0b534676b06fe720dc 5644 cw1-6005-fh5g11_1.0.0_all.deb
+ a20d015fa8b4d4d4841c7cf655446a8236b498cf 555 cw1-6005-fh5g11_1.0.0.dsc
+ 32fef70297225015b1caeaef5d22d732b8e3eb5e 5754 cw1-6005-fh5g11_1.0.0.tar.gz
+ 53a684e808e391acabee3bc35c05bd86630ea217 5940 cw1-6005-fh5g11_1.0.0_all.deb
 Checksums-Sha256: 
- 6effeb4ff28544ad775c0d1ebaed04975c432782ead3e8052b193e46b60eb11b 555 cw1-6005-fh5g11_1.0.0.dsc
- 5a20053d1558ef49acc871139d8985c724220ce188cd0ff85cd9bf4e8e233aca 5517 cw1-6005-fh5g11_1.0.0.tar.gz
- abc7f9717a8bd421d416b91294ec2372de7f34b95c6363de853db4f2ff04ead5 5644 cw1-6005-fh5g11_1.0.0_all.deb
+ e2313bbc5d7a10610b40ae82922c337661271e4e2d892e450034080f3056aa77 555 cw1-6005-fh5g11_1.0.0.dsc
+ 9a1c171af839e5384f2d2ccc4b0e5f5c328592484a34488615480872cc8c0df5 5754 cw1-6005-fh5g11_1.0.0.tar.gz
+ 24e10252074a555f0fbabe17937cd32ce687ddb54b865067b585874a8d426777 5940 cw1-6005-fh5g11_1.0.0_all.deb
 Files: 
- cc8edb75ec8309e53b4b458daae51ed0 555 net extra cw1-6005-fh5g11_1.0.0.dsc
- 86c28d08636b9aa8705014bb96f1d098 5517 net extra cw1-6005-fh5g11_1.0.0.tar.gz
- ed792717e942de6dd9447e4db04b81fd 5644 net extra cw1-6005-fh5g11_1.0.0_all.deb
+ bf60cf2241785a6a4f22243405e7fc55 555 net extra cw1-6005-fh5g11_1.0.0.dsc
+ 3343512f8836c81cb9f291d759672407 5754 net extra cw1-6005-fh5g11_1.0.0.tar.gz
+ d48b653bd4b0dd0add92d68fa883662d 5940 net extra cw1-6005-fh5g11_1.0.0_all.deb

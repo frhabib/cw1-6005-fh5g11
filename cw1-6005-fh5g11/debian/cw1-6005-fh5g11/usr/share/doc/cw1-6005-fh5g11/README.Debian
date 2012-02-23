@@ -1,6 +1,14 @@
 cw1-6005-fh5g11 for Debian
 ------------------
 
+This package requires php5-cli in order to work
 
+To install package use the command  dpkg -i packagename.deb
 
- -- fh5g11 <fh5g11@ecs.soton.ac.uk>  Tue, 21 Feb 2012 13:50:07 +0000
+To install dependencies run the command apt-get -f install
+
+To install php5-cli use the command  apt-get install php5-cli
+
+To run the package run the command get_feeds
+
+ -- Fatma Habib <fh5g11@ecs.soton.ac.uk>  Thu, 23 Feb 2012 13:50:07 +0000
